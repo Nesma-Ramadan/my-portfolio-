@@ -1,0 +1,101 @@
+.frontend-projects {
+  padding: var(--space-4xl) var(--space-md);
+}
+
+.frontend-projects__container {
+  max-width: var(--section-max-width);
+  margin: 0 auto;
+}
+
+.frontend-projects__heading {
+  font-family: var(--font-display);
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+}
+
+.frontend-projects__intro {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-2xl);
+  font-size: 0.9375rem;
+}
+
+.frontend-projects__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.frontend-project-card {
+  display: flex;
+  gap: var(--space-xl);
+  padding: var(--space-xl);
+  background: var(--color-surface);
+  border-radius: 12px;
+  border: 1px solid var(--color-border-light);
+  transition: all var(--transition-base);
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+.frontend-project-card:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 4px 20px rgba(43, 122, 120, 0.08);
+}
+
+@media (max-width: 560px) {
+  .frontend-project-card {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+}
+
+.frontend-project-card__number {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--color-accent);
+  opacity: 0.7;
+  flex-shrink: 0;
+}
+
+.frontend-project-card__content {
+  flex: 1;
+}
+
+.frontend-project-card__title {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-sm);
+}
+
+.frontend-project-card__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.frontend-project-card__tech-tag {
+  font-size: 0.75rem;
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--color-bg-alt);
+  color: var(--color-text-muted);
+  border-radius: 4px;
+}
+
+.frontend-project-card__built,
+.frontend-project-card__learned {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: var(--space-sm);
+}
+
+.frontend-project-card__links {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.frontend-project-card__link {
+  font-weight: 500;
+  font-size: 0.9375rem;
+}

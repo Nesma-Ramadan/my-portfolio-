@@ -1,0 +1,159 @@
+/* ============================================
+   Portfolio - Design Tokens & Base Styles
+   Neutral palette with confident accent
+   ============================================ */
+
+:root {
+  /* Colors - Warm neutral palette */
+  --color-bg: #FAF9F6;
+  --color-bg-alt: #F5F3EF;
+  --color-surface: #FFFFFF;
+  --color-text: #2D2A26;
+  --color-text-muted: #5C5854;
+  --color-text-light: #8A8580;
+  
+  /* Accent - Confident teal */
+  --color-accent: #2B7A78;
+  --color-accent-hover: #235E5C;
+  --color-accent-light: #E8F4F3;
+  
+  /* Borders */
+  --color-border: #E8E6E2;
+  --color-border-light: #F0EEEA;
+  
+  /* Typography */
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+  
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+  
+  /* Layout */
+  --section-max-width: 720px;
+  --content-max-width: 960px;
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  :root {
+    --color-accent: color(display-p3 0.2 0.48 0.47);
+  }
+}
+
+/* Reset & Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 400;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 4rem);
+  margin-bottom: var(--space-lg);
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+/* Links */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+/* Accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-md);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-accent);
+  color: white;
+  z-index: 100;
+  transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+  top: var(--space-md);
+}
+
+/* Scroll reveal animation for sections */
+.section-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-reveal.section-reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Shared animation - used by project cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+img{
+width: 100%;
+  display: block;
+  object-fit:contain;
+  object-position: center;
+}
