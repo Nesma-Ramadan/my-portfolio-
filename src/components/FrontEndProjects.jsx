@@ -28,11 +28,6 @@ export default function FrontEndProjects() {
                     alt={project.name}
                     className="frontend-project-card__image"
                   />
-                  {/* <div className="frontend-project-card__overlay">
-                    <div className="frontend-project-card__number">
-                      {String(index + 1).padStart(2, '0')}
-                    </div>
-                  </div> */}
                 </div>
               )}
               <div className="frontend-project-card__content">

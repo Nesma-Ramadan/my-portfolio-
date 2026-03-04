@@ -6,7 +6,9 @@ import p5 from "/public/healthCare.png"
 import p6 from "/public/web2.png"
 import p7 from "/public/property.png"
 import f1 from "/public/move app.png"
-import f2 from "/public/p.png"
+import f2 from "/public/Alex.png"
+import f3 from "/public/click.png"
+import f4 from "/public/Byza.png"
 
 
 /**
@@ -42,6 +44,7 @@ export const skills = {
     'TypeScript',
   ],
   uiUx: [
+    'Adopbe XD',
     'Figma',
     'Wireframing',
     'Prototyping',
@@ -132,7 +135,7 @@ export const frontEndProjects = [
   {
     id: 1,
     name: 'Movies App – Static Portfolio Website',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
+    technologies: ['HTML', 'CSS', 'JavaScript','API'],
     built: 'Developed a responsive multi-page portfolio site showcasing a dynamic Movies App with smooth navigation, interactive UI elements, and seamless user experience.',
     learned: 'Improved skills in semantic HTML structuring, advanced CSS layout techniques, and DOM manipulation in JavaScript to build interactive web features.',
     githubUrl: 'https://github.com/Nesma-Ramadan/Movies-App.git',
@@ -143,38 +146,38 @@ export const frontEndProjects = [
   },
   {
     id: 2,
-    name: 'Todo List App',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    built: 'Interactive todo list with add, complete, and delete functionality.',
-    learned: 'Event handling, local storage, and state management basics.',
-    githubUrl: 'https://github.com/',
-    liveUrl: null,
-    imagePlaceholder: 'Todo List App',
+    name: 'Personal Portfolio Website',
+    technologies: ['HTML', 'tailwindcss', 'React.js'],
+    built: 'Created a responsive, clean multi-section portfolio website to showcase personal projects, skills, and professional information with smooth scrolling and engaging UI.',
+    learned: 'Enhanced understanding of semantic HTML, responsive CSS layouts, and JavaScript for DOM interactions and navigation enhancements.',
+    githubUrl: 'https://github.com/Nesma-Ramadan/Alex-Portfolio.git',
+    liveUrl: 'https://alex-portfolio-dusky.vercel.app/',
+    imagePlaceholder: 'Personal Portfolio Website',
     image: f2,
     order: 2,
   },
   {
     id: 3,
     name: 'Weather Dashboard',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'API'],
-    built: 'Weather app that fetches data from an API and displays results.',
-    learned: 'Fetch API, async/await, and handling API responses.',
-    githubUrl: 'https://github.com/',
-    liveUrl: null,
+    technologies: ['TypeScript', 'Tailwind css', 'Next.js', 'API'],
+    built: 'Developed a fully responsive e‑commerce website featuring product listings, interactive UI elements, and user‑friendly navigation to simulate an online shopping experience.',
+    learned: 'Strengthened skills in structuring semantic HTML, creating modern CSS layouts and responsive design, and implementing DOM manipulation with JavaScript for dynamic content and interaction.',
+    githubUrl: 'https://github.com/Nesma-Ramadan/e-commers.git',
+    liveUrl: 'https://e-commers-snowy.vercel.app/',
     imagePlaceholder: 'Weather Dashboard',
-    image: p5,
+    image: f3,
     order: 3,
   },
   {
     id: 4,
-    name: 'React Portfolio',
-    technologies: ['React', 'CSS'],
-    built: 'This portfolio — built with React, reusable components, and responsive design.',
-    learned: 'Component architecture, props, state, and modern React patterns.',
-    imagePlaceholder: 'React Portfolio',
-    image: p6,
-    githubUrl: 'https://github.com/',
-    liveUrl: null,
+    name: 'Byza Responsive Website',
+    technologies: ['React.js', 'CSS' ,'TypeScript' ,'API'],
+    built: 'Developed a modern, responsive website with intuitive navigation, engaging layout, and smooth interactions to represent the Byza brand effectively across different screen sizes.',
+    learned: 'Improved skills in writing semantic HTML structure, designing responsive CSS layouts, and implementing JavaScript for interactive UI behavior and enhanced user experience.',
+    imagePlaceholder: 'Byza Responsive Website',
+    image: f4,
+    githubUrl: 'https://github.com/Nesma-Ramadan/Byza_website.git',
+    liveUrl: 'https://byza-website.vercel.app/',
     order: 4,
   },
 ].sort((a, b) => a.order - b.order);
@@ -213,11 +216,11 @@ export const timelineItems = [
 ];
 
 export const contactContent = {
-  email: 'hello@nesma.dev',
+  email: 'nesma.creativehub.freelance@gmail.com',
   message: "I'd love to connect! Whether you're a recruiter, a fellow developer, or someone curious about my journey — feel free to reach out.",
   links: [
-    { name: 'GitHub', url: 'https://github.com/', icon: 'github' },
-    { name: 'LinkedIn', url: 'https://linkedin.com/in/', icon: 'linkedin' },
-    { name: 'Behance', url: 'https://www.behance.net/', icon: 'behance' },
+    { name: 'GitHub', url: 'https://github.com/Nesma-Ramadan?tab=repositories', icon: 'github' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/nesma-ramadan', icon: 'linkedin' },
+    { name: 'Behance', url: 'https://www.behance.net/Horizons-Design', icon: 'behance' },
   ],
 };
