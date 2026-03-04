@@ -21,9 +21,20 @@ export default function FrontEndProjects() {
               className="frontend-project-card"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="frontend-project-card__number">
-                {String(index + 1).padStart(2, '0')}
-              </div>
+              {project.image && (
+                <div className="frontend-project-card__image-wrapper">
+                  <img
+                    src={project.image}
+                    alt={project.name}
+                    className="frontend-project-card__image"
+                  />
+                  {/* <div className="frontend-project-card__overlay">
+                    <div className="frontend-project-card__number">
+                      {String(index + 1).padStart(2, '0')}
+                    </div>
+                  </div> */}
+                </div>
+              )}
               <div className="frontend-project-card__content">
                 <h3 className="frontend-project-card__title">{project.name}</h3>
                 <div className="frontend-project-card__tech">
@@ -46,6 +57,7 @@ export default function FrontEndProjects() {
                     rel="noopener noreferrer"
                     className="frontend-project-card__link"
                   >
+                    <i className="fa-brands fa-github "></i>
                     GitHub
                   </a>
                   {project.liveUrl && (
@@ -55,6 +67,7 @@ export default function FrontEndProjects() {
                       rel="noopener noreferrer"
                       className="frontend-project-card__link"
                     >
+                      <i className="fa-solid fa-link text-red "></i>
                       Live Demo
                     </a>
                   )}

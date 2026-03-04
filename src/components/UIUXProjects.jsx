@@ -29,10 +29,10 @@ export default function UIUXProjects() {
               <div className="uiux-project-card__content">
                 <h3 className="uiux-project-card__title">{project.title}</h3>
                 <div className="uiux-project-card__description">
-                  <p>
+                  <p >
                     <strong>Problem:</strong> {project.problem}
                   </p>
-                  <p>
+                  <p >
                     <strong>Solution:</strong> {project.solution}
                   </p>
                 </div>
